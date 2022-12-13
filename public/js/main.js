@@ -47,3 +47,9 @@ function outputMessage(message) {
 function outputRoomName(room) {
     roomName.innerText = room;
 }
+
+function outputUsers(users) {
+    userList.innerHTML = `
+        ${users.map(user => `<li>${user.username}</li>`).join('')}
+    `;
+}
